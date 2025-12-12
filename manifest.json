@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini Cite Cleaner",
+  "version": "1.0",
+  "description": "Removes spurious [cite_start] tags from Gemini responses.",
+  "content_scripts": [
+    {
+      "matches": ["*://gemini.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": []
+}
